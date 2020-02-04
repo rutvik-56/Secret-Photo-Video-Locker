@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".load">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionsMenu
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="20dp"
+            app:fab_addButtonColorNormal="@color/pink"
+            app:fab_addButtonColorPressed="@color/pinkpressed"
+            app:fab_addButtonPlusIconColor="@color/white"
+            app:fab_labelStyle="@style/customfab"
+            >
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/folder"
+                app:fab_colorNormal="@color/pink"
+                app:fab_colorPressed="@color/pinkpressed"
+                app:fab_icon="@drawable/fol"
+                app:fab_size="mini"
+                app:fab_title="New Folder"
+                android:layout_height="wrap_content" />
+
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:id="@+id/file"
+                app:fab_colorNormal="@color/pink"
+                app:fab_colorPressed="@color/pinkpressed"
+                app:fab_icon="@drawable/files"
+                app:fab_size="mini"
+                app:fab_title="Other Files"
+                android:layout_height="wrap_content" />
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:fab_colorNormal="@color/pink"
+                android:id="@+id/audio"
+                app:fab_colorPressed="@color/pinkpressed"
+                app:fab_icon="@drawable/audio"
+                app:fab_size="mini"
+                app:fab_title="Import Audio"
+                android:layout_height="wrap_content" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:fab_colorNormal="@color/pink"
+                app:fab_colorPressed="@color/pinkpressed"
+                app:fab_icon="@drawable/video"
+                android:id="@+id/video"
+                app:fab_size="mini"
+                app:fab_title="Import Videos"
+                android:layout_height="wrap_content" />
+
+            <com.getbase.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                app:fab_colorNormal="@color/pink"
+                android:id="@+id/photo"
+                app:fab_colorPressed="@color/pinkpressed"
+                app:fab_icon="@drawable/photo"
+                app:fab_size="mini"
+                app:fab_title="Import Photos"
+                android:layout_height="wrap_content" />
+
+        </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

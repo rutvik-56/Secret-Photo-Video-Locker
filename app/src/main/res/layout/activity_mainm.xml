@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivitym">
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+
+
+        <RelativeLayout
+            android:id="@+id/ovtp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+            <ListView
+                android:id="@+id/gridview"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:numColumns="1"
+                android:verticalSpacing="10dp"
+                android:horizontalSpacing="10dp"
+                android:stretchMode="spacingWidthUniform"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                >
+            </ListView>
+
+
+                <LinearLayout
+                    android:id="@+id/asdd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.getbase.floatingactionbutton.FloatingActionsMenu
+                    android:id="@+id/rtgh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginRight="20dp"
+                    app:fab_addButtonColorNormal="@color/pink"
+                    app:fab_addButtonColorPressed="@color/pinkpressed"
+                    app:fab_addButtonPlusIconColor="@color/white"
+                    app:fab_labelStyle="@style/customfab" >
+
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/folder"
+                        app:fab_colorNormal="@color/pink"
+                        app:fab_colorPressed="@color/pinkpressed"
+                        app:fab_icon="@drawable/fol"
+                        app:fab_size="mini"
+                        app:fab_title="New Folder"
+                        android:layout_height="wrap_content" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/setho"
+                        app:fab_colorNormal="@color/pink"
+                        app:fab_colorPressed="@color/pinkpressed"
+                        app:fab_icon="@drawable/whsett"
+                        app:fab_size="mini"
+                        app:fab_title="Setting"
+                        android:layout_height="wrap_content" />
+
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/camera"
+                        app:fab_colorNormal="@color/pink"
+                        app:fab_colorPressed="@color/pinkpressed"
+                        app:fab_icon="@drawable/camera"
+                        app:fab_size="mini"
+                        app:fab_title="Camera"
+                        android:layout_height="wrap_content" />
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:id="@+id/filez"
+                        app:fab_colorNormal="@color/pink"
+                        app:fab_colorPressed="@color/pinkpressed"
+                        app:fab_icon="@drawable/files"
+                        app:fab_size="mini"
+                        app:fab_title="Other Files"
+                        android:layout_height="wrap_content" />
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        app:fab_colorNormal="@color/pink"
+                        android:id="@+id/audio"
+                        app:fab_colorPressed="@color/pinkpressed"
+                        app:fab_icon="@drawable/audio"
+                        app:fab_size="mini"
+                        app:fab_title="Import Audio"
+                        android:layout_height="wrap_content" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        app:fab_colorNormal="@color/pink"
+                        app:fab_colorPressed="@color/pinkpressed"
+                        app:fab_icon="@drawable/video"
+                        android:id="@+id/video"
+                        app:fab_size="mini"
+                        app:fab_title="Import Videos"
+                        android:layout_height="wrap_content" />
+
+                    <com.getbase.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        app:fab_colorNormal="@color/pink"
+                        android:id="@+id/photo"
+                        app:fab_colorPressed="@color/pinkpressed"
+                        app:fab_icon="@drawable/photo"
+                        app:fab_size="mini"
+                        app:fab_title="Import Photos"
+                        android:layout_height="wrap_content" />
+
+                </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/unhide"
+                    android:layout_alignParentBottom="true"
+                    app:fab_colorNormal="@color/pink"
+                    android:visibility="invisible"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="100dp"
+                    app:fab_colorPressed="@color/pinkpressed"
+                    app:fab_icon="@drawable/unhide"
+                    android:paddingRight="40dp"
+                    app:fab_size="normal"
+                    app:fab_title="UnHide"
+                    android:layout_height="wrap_content" />
+
+
+                <com.getbase.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:id="@+id/delete"
+                    android:visibility="invisible"
+                    android:layout_alignParentBottom="true"
+                    app:fab_colorNormal="@color/pink"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginBottom="30dp"
+                    app:fab_colorPressed="@color/pinkpressed"
+                    app:fab_icon="@drawable/def"
+                    app:fab_size="normal"
+                    app:fab_title="Delete"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

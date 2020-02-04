@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Secret Photo Video Locker</string>
+    <string name="new_memory_title_hint">Add Title</string>
+    <string name="new_memory_btn_cancel">Cancel</string>
+    <string name="new_memory_btn_save">Save</string>
+    <string name="activity_main_empty_view_text">Create your first photo memory with the button below.</string>
+    <string name="new_memory_btn_gallery">Add a photo from gallery</string>
+    <string name="new_memory_btn_camera">Add a photo from camera</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="camera">Camera</string>
+    <string name="select">selectall</string>
+    <string name="action_settings">Settings</string>
+    <string name="image">image</string>
+    <string name="videos">Videos</string>
+    <string name="image1">image1</string>
+    <string name="image2">image2</string>
+</resources>

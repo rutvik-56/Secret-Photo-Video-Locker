@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/xcvm"
+    android:layout_width="fill_parent"
+    android:layout_height="110dp">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp">
+
+    <ImageView
+        android:id="@+id/imageviewgrid"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp" />
+
+<TextView
+    android:id="@+id/mumk"
+    android:layout_alignTop="@+id/textviewgridview"
+    android:layout_width="30dp"
+    android:background="@drawable/meddd"
+    android:visibility="invisible"
+    android:layout_height="30dp"
+    />
+
+
+    <CheckBox
+        android:id="@+id/radiobutton"
+        android:layout_width="30dp"
+        android:layout_alignParentRight="true"
+        android:buttonTint="@color/white"
+        android:scaleY="1.4"
+        android:scaleX="1.4"
+        android:visibility="invisible"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp" />
+
+    <TextView
+        android:id="@+id/textviewgridview"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:background="#80555555"
+        android:paddingLeft="5dp"
+        android:paddingRight="3dp"
+        android:paddingTop="1.5dp"
+        android:layout_marginLeft="3.1dp"
+        android:layout_marginRight="3.1dp"
+        android:paddingBottom="1.5dp"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:layout_height="20dp" />
+
+    </RelativeLayout>
+</LinearLayout>

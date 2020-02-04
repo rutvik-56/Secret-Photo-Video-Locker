@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#fafafa</color>
+    <color name="whitepressed">#f1f1f1</color>
+    <color name="half_black">#808080</color>
+    <color name="pink">#e91e63</color>
+    <color name="pinkpressed">#ec407a</color>
+    <color name="background">#e5e5e5</color>
+    <color name="bluesemitransparent">#805677fc</color>
+    <color name="bluesemitransparentpressed">#80738ffe</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="titleTextColor">#FFFFFF</color>
+    <color name="titleTabColor">#000000</color>
+    <color name="titleSelectedTabColor">#3F51B5</color>
+</resources>

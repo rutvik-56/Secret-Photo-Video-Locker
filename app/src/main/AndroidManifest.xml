@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.secretphotovideolocker">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sdfg"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/sdfg"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:node="replace">
+
+        <activity
+            android:name=".Gallery"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <activity android:name=".OpenGallery"
+            android:screenOrientation="portrait"
+
+            />
+
+        <activity android:name=".Lockscreen"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name=".Setting"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity android:name=".vid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="net.rdrei.android.dirchooser.DirectoryChooserActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".imhjk" />
+        <activity
+            android:name=".viewall"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListImageSelectedActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity
+            android:name=".MainActivitym"
+            android:screenOrientation="portrait">
+
+        </activity>
+    </application>
+
+</manifest>

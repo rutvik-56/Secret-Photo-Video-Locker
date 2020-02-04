@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OpenGallery">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:navigationIcon="?attr/homeAsUpIndicator"
+            android:elevation="4dp"
+            app:title="Select Videos"
+            android:background="@color/colorAccent"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include layout="@layout/content_open_gallery"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"/>
+
+
+        <android.support.constraint.ConstraintLayout
+
+            android:id="@+id/layoutSend"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="29dp"
+            android:layout_marginBottom="40dp"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/button_send"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:background="@drawable/background_button_send"
+                android:padding="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@drawable/sendo"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/textViewSeletedCount"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:background="@drawable/background_count_selected_button"
+                android:gravity="center"
+                android:minHeight="20dp"
+                android:minWidth="20dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toTopOf="@id/button_send"
+                app:layout_constraintDimensionRatio="H,1:1"
+                app:layout_constraintRight_toRightOf="@id/button_send"
+                app:layout_constraintTop_toTopOf="@id/button_send" />
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
